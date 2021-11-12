@@ -12,13 +12,13 @@
                         <input type="text" name="id" value="{{ $data['Accesory']->getId()}}" hidden>
                         <div class="form-group">
                             <label>{{__('admin.name')}}</label>
-                            <input type="text" class="form-control" placeholder="{{ $data['Accesory']->getName() }}"
-                                name="name" value="{{ old('name') }}">
+                            <input type="text" class="form-control" value="{{ $data['Accesory']->getName() }}"
+                                name="name">
                         </div>
                         <div class="form-group">
                             <label>{{__('admin.price')}}</label>
-                            <input type="text" class="form-control" placeholder="{{ $data['Accesory']->getPrice() }}"
-                                name="price" value="{{ old('price') }}">
+                            <input type="text" class="form-control" value="{{ $data['Accesory']->getPrice() }}"
+                                name="price">
                         </div>
                         <div class="form-group">
                             <label>{{__('admin.images')}}</label>

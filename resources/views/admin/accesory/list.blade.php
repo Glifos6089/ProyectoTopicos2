@@ -13,38 +13,29 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    <h6 class="sidebar-title">{{__('admin.lis')}}</h6>
+                    <h6 class="sidebar-title">{{__('admin.lisa')}}</h6>
                 </div>
                 <div class="card-body">
                     <table class='table-hover table-bordered table-striped' style="width:100% ; border-spacing: 5px ">
-                        <caption>{{__('admin.lis')}}</caption>
+                        <caption>{{__('admin.lisa')}}</caption>
                         <tr>
                             <th>{{__('admin.name')}}</th>
                             <th>{{__('admin.price')}}</th>
-                            <th>{{__('admin.style')}}</th>
-                            <th>{{__('admin.color')}}</th>
-                            <th>{{__('admin.score')}}</th>
-                            <th>{{__('admin.texture')}}</th>
-                            <th>{{__('admin.image')}}</th>
                         </tr>
-                        @foreach($data["handbags"] as $handbag)
+                        @foreach($data["Accesory"] as $accesory)
                         <tr>
-                            <td>{{ $handbag->getName() }}</td>
-                            <td>{{ $handbag->getPrice() }}</td>
-                            <td>{{ $handbag->getStyle() }}</td>
-                            <td>{{ $handbag->getColor() }}</td>
-                            <td>{{ $handbag->getScore() }}</td>
-                            <td>{{ $handbag->getTexture() }}</td>
-                            <td>{{ $handbag->getImage() }}</td>
+                            <td>{{ $accesory->getName() }}</td>
+                            <td>{{ $accesory->getPrice() }}</td>
                             <td>
-                                <a href="edit/{{$handbag->getId()}}" class="btn btn-warning btn-sm" role="button"
+                                <a href="{{ route('admin.accesory.edit', ['id'=> $accesory->getId()]) }}"
+                                    class="btn btn-warning btn-sm" role="button"
                                     aria-pressed="true">{{__('admin.ed')}}</a>
                             </td>
                             <td>
-                                <form method="POST" action="{{ route('admin.handbag.delete') }}">
+                                <form method="POST" action="{{ route('admin.accesory.delete') }}">
                                     @csrf
                                     <button type="submit" class="btn btn-danger btn-sm" name="id"
-                                        value="{{ ($handbag->getId()) }}">{{__('admin.del')}}</button>
+                                        value="{{ ($accesory->getId()) }}">{{__('admin.del')}}</button>
                                 </form>
                             </td>
                         </tr>
@@ -53,7 +44,7 @@
                 </div>
             </div>
             <div class="btn-group">
-                <form method="GET" action="{{ route('admin.handbag.create') }}">
+                <form method="GET" action="{{ route('admin.accesory.create') }}">
                     <button type="submit" class="btn btn-warning btn-lg">{{__('admin.user')}}</button>
                 </form>
                 <a href="{{ URL::route('admin.home.index') }}">

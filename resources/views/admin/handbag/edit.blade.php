@@ -12,33 +12,33 @@
                         <input type="text" name="id" value="{{ $data['handbag']->getId()}}" hidden>
                         <div class="form-group">
                             <label>{{__('admin.name')}}</label>
-                            <input type="text" class="form-control" placeholder="{{ $data['handbag']->getName() }}"
-                                name="name" value="{{ old('name') }}">
+                            <input type="text" class="form-control" value="{{ $data['handbag']->getName() }}"
+                                name="name">
                         </div>
                         <div class="form-group">
                             <label>{{__('admin.price')}}</label>
-                            <input type="text" class="form-control" placeholder="{{ $data['handbag']->getPrice() }}"
-                                name="price" value="{{ old('price') }}">
+                            <input type="text" class="form-control" value="{{ $data['handbag']->getPrice() }}"
+                                name="price">
                         </div>
                         <div class="form-group">
                             <label>{{__('admin.style')}}</label>
-                            <input type="text" class="form-control" placeholder="{{ $data['handbag']->getStyle() }}"
-                                name="style" value="{{ old('style') }}">
+                            <input type="text" class="form-control" value="{{ $data['handbag']->getStyle() }}"
+                                name="style">
                         </div>
                         <div class="form-group">
                             <label>{{__('admin.color')}}</label>
-                            <input type="text" class="form-control" placeholder="{{ $data['handbag']->getColor() }}"
-                                name="color" value="{{ old('color') }}">
+                            <input type="text" class="form-control" value="{{ $data['handbag']->getColor() }}"
+                                name="color">
                         </div>
                         <div class="form-group">
                             <label>{{__('admin.score')}}</label>
-                            <input type="text" class="form-control" placeholder="{{ $data['handbag']->getScore() }}"
-                                name="score" value="{{ old('score') }}">
+                            <input type="text" class="form-control" value="{{ $data['handbag']->getScore() }}"
+                                name="score">
                         </div>
                         <div class="form-group">
                             <label>{{__('admin.texture')}}</label>
-                            <input type="text" class="form-control" placeholder="{{ $data['handbag']->getTexture() }}"
-                                name="texture" value="{{ old('texture') }}">
+                            <input type="text" class="form-control" value="{{ $data['handbag']->getTexture() }}"
+                                name="texture">
                         </div>
                         <div class="form-group">
                             <label>{{__('admin.images')}}</label>

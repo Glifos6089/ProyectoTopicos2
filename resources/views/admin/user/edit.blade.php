@@ -11,18 +11,17 @@
                         <input type="text" name="id" value="{{ $data['user']->getId()}}" hidden>
                         <div class="form-group">
                             <label>{{__('admin.name')}}</label>
-                            <input type="text" class="form-control" placeholder="{{ $data['user']->getName() }}"
-                                name="name" value="{{ old('name') }}">
+                            <input type="text" class="form-control" value="{{ $data['user']->getName() }}" name="name">
                         </div>
                         <div class="form-group">
                             <label>{{__('admin.email')}}</label>
-                            <input type="text" class="form-control" placeholder="{{ $data['user']->getEmail() }}"
-                                name="email" value="{{ old('email') }}">
+                            <input type="text" class="form-control" value="{{ $data['user']->getEmail() }}"
+                                name="email">
                         </div>
                         <div class="form-group">
                             <label>{{__('admin.admin')}}</label>
-                            <input type="text" class="form-control" placeholder="{{ $data['user']->getAdmin() }}"
-                                name="is_admin" value="{{ old('is_admin') }}">
+                            <input type="text" class="form-control" value="{{ $data['user']->getAdmin() }}"
+                                name="is_admin">
                         </div>
                         <button type="submit" class="btn btn-primary">{{__('admin.changes')}}</button>
                     </form>

@@ -15,8 +15,8 @@
                             <p class="card-text">{{__('review.commentary')}} {{ $review->getComentary() }}</p>
                         </div>
                     </div>
-                    @endforeach
                 </div>
+                @endforeach
             </div>
         </div>
     </div>

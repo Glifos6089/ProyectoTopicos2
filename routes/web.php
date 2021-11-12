@@ -30,8 +30,7 @@ Route::get('/admin/handbag/edit/{id}', 'App\Http\Controllers\Admin\AdminHandbagC
 Route::post('/admin/handbag/save', 'App\Http\Controllers\Admin\AdminHandbagController@saveHandbag')->name("admin.handbag.save");
 Route::post('/admin/handbag/saveEditHandbag', 'App\Http\Controllers\Admin\AdminHandbagController@saveEditHandbag')->name("admin.handbag.saveEditHandbag");
 Route::get('/admin/handbag/search', 'App\Http\Controllers\Admin\AdminHandbagController@search')->name('admin.handbag.search');
-Route::get('/admin/accesory/catalogue', 'App\Http\Controllers\Admin\AdminAccesoryController@catalogue')->name("admin.accesory.catalogue");
-Route::get('/admin/user/catalogue', 'App\Http\Controllers\Admin\AdminUserController@catalogue')->name("admin.user.catalogue");
+Route::get('/admin/user/catalogue', 'App\Http\Controllers\Admin\AdminUserController@catalogue')->name("admin.user.list");
 Route::get('/admin/user/create', 'App\Http\Controllers\Admin\AdminUserController@createUser')->name("admin.user.create");
 Route::post('/admin/user/delete', 'App\Http\Controllers\Admin\AdminUserController@deleteUser')->name("admin.user.delete");
 Route::get('/admin/user/edit/{id}', 'App\Http\Controllers\Admin\AdminUserController@editUser')->name("admin.user.edit");
@@ -44,7 +43,7 @@ Route::get('/cart/index', 'App\Http\Controllers\CartController@index')->name("ca
 Route::get('/cart/removeAll/', 'App\Http\Controllers\CartController@removeAll')->name("cart.removeAll");
 Route::post('/cart/buy', 'App\Http\Controllers\CartController@buy')->name("cart.buy");
 Route::post('/cart/pdf', 'App\Http\Controllers\CartController@createPDF')->name("cart.pdf");
-Route::get('/admin/accesory/catalogue', 'App\Http\Controllers\Admin\AdminAccesoryController@catalogue')->name("admin.accesory.catalogue");
+Route::get('/admin/accesory/catalogue', 'App\Http\Controllers\Admin\AdminAccesoryController@catalogue')->name("admin.accesory.list");
 Route::get('/admin/accesory/create', 'App\Http\Controllers\Admin\AdminAccesoryController@createAccesory')->name("admin.accesory.create");
 Route::post('/admin/accesory/delete', 'App\Http\Controllers\Admin\AdminAccesoryController@deleteAccesory')->name("admin.accesory.delete");
 Route::get('/admin/accesory/edit/{id}', 'App\Http\Controllers\Admin\AdminAccesoryController@editAccesory')->name("admin.accesory.edit");
@@ -56,4 +55,6 @@ Route::get('/review/catalogue/{id}', 'App\Http\Controllers\ReviewController@cata
 Route::get('/wishlist', 'App\Http\Controllers\WishlistController@index')->name("wishlist.index");
 Route::get('/wishlist/add/{id}', 'App\Http\Controllers\WishlistController@add')->name("wishlist.add");
 Route::get('/wishlist/addCart', 'App\Http\Controllers\WishlistController@addCart')->name("wishlist.addCart");
+Route::get('/order/list', 'App\Http\Controllers\OrderController@index')->name("order.list");
+Route::get('/order/{id}', 'App\Http\Controllers\OrderController@showById')->name("order.id");
 Auth::routes();

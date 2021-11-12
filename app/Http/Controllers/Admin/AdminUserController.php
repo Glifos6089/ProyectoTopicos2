@@ -27,7 +27,7 @@ class AdminUserController extends Controller
         $user = User::all();
         $data["title"] = "Users";
         $data["users"] = $user;
-        return view('admin.user.catalogue')->with("data", $data);
+        return view('admin.user.list')->with("data", $data);
     }
 
     public function search(Request $request)
@@ -37,7 +37,7 @@ class AdminUserController extends Controller
             ->where('name', 'LIKE', "%{$search}%")
             ->get();
             $data["users"] = $users;
-        return view('admin.user.catalogue')->with("data", $data);
+        return view('admin.user.list')->with("data", $data);
     }
 
     public function createUser()

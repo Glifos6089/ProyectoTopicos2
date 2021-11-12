@@ -31,6 +31,7 @@
             <a class="navbar-brand js-scroll-trigger" href="{{ route('home.index') }}">Home</a>
             <a class="navbar-brand js-scroll-trigger" href="{{ route('cart.index') }}">Shopping Cart</a>
             <a class="navbar-brand js-scroll-trigger" href="{{ route('wishlist.index') }}">WishList</a>
+            <a class="navbar-brand js-scroll-trigger" href="{{ route('order.list') }}">Orders</a>
             <button
                 class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
                 type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"

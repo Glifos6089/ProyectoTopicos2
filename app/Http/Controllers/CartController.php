@@ -138,7 +138,7 @@ class CartController extends Controller
             $request->session()->forget('quantifyHandbag');
             $request->session()->forget('accesories');
             $request->session()->forget('quantifyAccesory');
-            return view('cart.factura')->with('data', $data);
+            return view('cart.invoice')->with('data', $data);
         } else {
             return back();
         }
@@ -152,7 +152,7 @@ class CartController extends Controller
         $data['order'] = $order->first();
         $data['items'] = [$order->first()->items[0]];
         view()->share('data', $data);
-        $pdf = PDF::loadView('cart.factura', $data);
+        $pdf = PDF::loadView('cart.invoice', $data);
         return $pdf->download('Factura.pdf');
     }
 }

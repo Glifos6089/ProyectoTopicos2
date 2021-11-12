@@ -17,7 +17,7 @@
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="portfolio-item mx-auto">
                     <a class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100 btn"
-                        href="{{ route('admin.user.catalogue') }}">
+                        href="{{ route('admin.user.list') }}">
                     </a>
                     <img class="img-fluid" src="{{ asset('/img/portfolio/user.png') }}" alt="" />
                 </div>
@@ -26,7 +26,7 @@
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="portfolio-item mx-auto">
                     <a class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100 btn"
-                        href="{{ route('admin.handbag.catalogue') }}">
+                        href="{{ route('admin.handbag.list') }}">
                     </a>
                     <img class="img-fluid" src="{{ asset('/img/portfolio/handbag.png') }}" alt="" />
                 </div>
@@ -35,7 +35,7 @@
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="portfolio-item mx-auto">
                     <a class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100 btn"
-                        href="{{ route('admin.accesory.catalogue') }}">
+                        href="{{ route('admin.accesory.list') }}">
                     </a>
                     <img class="img-fluid" src="{{ asset('/img/portfolio/accesory.png') }}" alt="" />
                 </div>

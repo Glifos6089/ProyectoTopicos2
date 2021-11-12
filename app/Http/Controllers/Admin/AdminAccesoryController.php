@@ -28,7 +28,7 @@ class AdminAccesoryController extends Controller
         $accesory = Accesory::all();
         $data["title"] = "Accesory";
         $data["Accesory"] = $accesory;
-        return view('admin.accesory.catalogue')->with("data", $data);
+        return view('admin.accesory.list')->with("data", $data);
     }
     public function createAccesory()
     {
