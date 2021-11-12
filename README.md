@@ -1,2 +1,1 @@
-# ProyectoTopicos2
-Proyecto de TEIS
+# ProyectoTopicos
