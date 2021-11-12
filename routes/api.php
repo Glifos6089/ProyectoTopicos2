@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/handbags', 'App\Http\Controllers\Api\HandbagApi@index')->name("api.handbag.index");
+Route::get('/handbags', 'App\Http\Controllers\api\HandbagApi@index')->name("api.handbag.index");
