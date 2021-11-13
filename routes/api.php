@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/handbags', 'App\Http\Controllers\api\HandbagApi@index')->name("api.handbag.index");
+Route::get('/covid19', 'App\Http\Controllers\api\covid19Api@index')->name("api.covid19.index");

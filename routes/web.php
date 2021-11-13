@@ -57,6 +57,6 @@ Route::get('/wishlist/add/{id}', 'App\Http\Controllers\WishlistController@add')-
 Route::get('/wishlist/addCart', 'App\Http\Controllers\WishlistController@addCart')->name("wishlist.addCart");
 Route::get('/order/list', 'App\Http\Controllers\OrderController@index')->name("order.list");
 Route::get('/order/{id}', 'App\Http\Controllers\OrderController@showById')->name("order.id");
-Route::get('lang/home', 'App\Http\Controllers\LangController@index');
 Route::get('lang/change', 'App\Http\Controllers\LangController@change')->name('changeLang');
+Route::get('/covid19', 'App\Http\Controllers\covid19Api@index')->name('covid19.apicovid');
 Auth::routes();
