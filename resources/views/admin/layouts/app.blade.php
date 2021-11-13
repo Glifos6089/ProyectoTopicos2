@@ -34,7 +34,7 @@
                 <p>
                     ...
                 </p>
-                <a class="navbar-brand js-scroll-trigger" href="{{ route('admin.home.index') }}">Admin Panel</a>
+                <a class="navbar-brand js-scroll-trigger" href="{{ route('admin.home.index') }}">{{__('admin.panel')}}</a>
                 <button
                     class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
                     type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -75,7 +75,7 @@
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Heading-->
             <img src="{{ asset('/img/portfolio/moon4.png') }}">
-            <h1 class="masthead-heading text-uppercase mb-0">Admin panel</h1>
+            <h1 class="masthead-heading text-uppercase mb-0">{{__('admin.panel')}}</h1>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>

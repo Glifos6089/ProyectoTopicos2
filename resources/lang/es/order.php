@@ -13,9 +13,9 @@
     |
     */
 
-    'list' => 'Orders List',
+    'list' => 'Lista de ordenes',
     'id' => 'ID',
-    'adress' => 'Adress',
-    'price' => 'Total Price',
-    'search' => 'Search'
+    'adress' => 'Dirección',
+    'price' => 'Precio total',
+    'search' => 'Buscar'
     ];

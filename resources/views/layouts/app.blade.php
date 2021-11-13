@@ -28,10 +28,10 @@
             <p>
                 ...
             </p>
-            <a class="navbar-brand js-scroll-trigger" href="{{ route('home.index') }}">Home</a>
-            <a class="navbar-brand js-scroll-trigger" href="{{ route('cart.index') }}">Shopping Cart</a>
-            <a class="navbar-brand js-scroll-trigger" href="{{ route('wishlist.index') }}">WishList</a>
-            <a class="navbar-brand js-scroll-trigger" href="{{ route('order.list') }}">Orders</a>
+            <a class="navbar-brand js-scroll-trigger" href="{{ route('home.index') }}">{{__('layout.home')}}</a>
+            <a class="navbar-brand js-scroll-trigger" href="{{ route('cart.index') }}">{{__('layout.cart')}}</a>
+            <a class="navbar-brand js-scroll-trigger" href="{{ route('wishlist.index') }}">{{__('layout.wish')}}</a>
+            <a class="navbar-brand js-scroll-trigger" href="{{ route('order.list') }}">{{__('layout.order')}}</a>
             <button
                 class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
                 type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"

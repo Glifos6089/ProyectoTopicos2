@@ -13,11 +13,11 @@ return [
     |
     */
 
-    'view' => 'View Details',
-    'cart' => 'Add to cart',
-    'review' => 'Create Review',
-    'see' => 'See Review',
-    'wishlist' => 'Add to Wishlist',
+    'view' => 'Ver Detalles',
+    'cart' => 'Añadir al carrito',
+    'review' => 'Crear reseña',
+    'see' => 'Ver reseña',
+    'wishlist' => 'Añadir a la lista de deseos',
 
 
 ];
