@@ -18,6 +18,7 @@ return [
     'review' => 'Crear reseña',
     'see' => 'Ver reseña',
     'wishlist' => 'Añadir a la lista de deseos',
+    'add' => 'Añadir al carrito de compras',
 
 
 ];

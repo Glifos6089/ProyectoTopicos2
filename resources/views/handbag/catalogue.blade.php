@@ -50,7 +50,7 @@
                             </div>
                             <div class="d-flex justify-content-around">
                                 <a href="{{ route('wishlist.add', ['id'=> $handbag->getId()]) }}"
-                                    class="btn btn-primary m-1" role="button" aria-pressed="true"> Add to Wishlist</a>
+                                    class="btn btn-primary m-1" role="button" aria-pressed="true">{{__('handbag.wishlist')}}</a>
                                 <a href="{{ route('handbag.add', ['id'=> $handbag->getId()]) }}"
                                     class="btn btn-primary m-1" role="button"
                                     aria-pressed="true">{{__('admin.add')}}</a>
