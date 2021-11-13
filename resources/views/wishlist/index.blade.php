@@ -9,21 +9,25 @@
             <div class="card">
                 <div class="card-header">{{__('wishlist.view')}}</div>
                 <div class="card-body">
-                    @foreach($data["handbags"] as $handbag)
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <div class="card-body">
-                                <p class="card-text">{{__('wishlist.name')}}{{ $handbag->getName() }}</p>
-                                <p class="card-text">{{__('wishlist.price')}} {{ $handbag->getPrice() }}</p>
-                                <p class="card-text">{{__('wishlist.style')}} {{ $handbag->getStyle() }}</p>
-                                <p class="card-text">{{__('wishlist.color')}} {{ $handbag->getColor() }}</p>
-                                <p class="card-text">{{__('wishlist.texture')}} {{ $handbag->getTexture() }}</p>
+                    <div class="row">
+                        @foreach($data["handbags"] as $handbag)
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <div class="card-body">
+                                    <p class="card-text">{{__('wishlist.name')}}{{ $handbag->getName() }}</p>
+                                    <p class="card-text">{{__('wishlist.price')}} {{ $handbag->getPrice() }}</p>
+                                    <p class="card-text">{{__('wishlist.style')}} {{ $handbag->getStyle() }}</p>
+                                    <p class="card-text">{{__('wishlist.color')}} {{ $handbag->getColor() }}</p>
+                                    <p class="card-text">{{__('wishlist.texture')}} {{ $handbag->getTexture() }}</p>
+                                </div>
+                                <div class="center">
+                                    <a href="{{ route('wishlist.addCart') }}" class="btn btn-primary" role="button"
+                                        aria-pressed="true"> {{__('wishlist.cart')}}</a>
+                                </div>
                             </div>
-                            <a href="{{ route('wishlist.addCart') }}" class="btn btn-primary" role="button"
-                                aria-pressed="true"> {{__('wishlist.cart')}}</a>
                         </div>
+                        @endforeach
                     </div>
-                    @endforeach
                 </div>
             </div>
         </div>

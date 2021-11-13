@@ -43,6 +43,7 @@ return [
     'nequi'=>'Cuenta Nequi: 123456789',
     'gen'=>'Generate',
     'start'=>'Begin',
+    'address'=>'Enter your address',
 
 
 

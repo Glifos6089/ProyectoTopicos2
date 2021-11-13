@@ -21,7 +21,7 @@ return [
     'colombia' => 'Colombia',
     'medellin' => 'Medellín',
     'web' => 'Acerca de la web',
-    'about'=> 'Sobre',
+    'about'=> 'Acerca de nosotros',
     'description'=>'Somos una tienda de bolsos, donde nos basamos en la creacion y personalizacion de bolsos y accesorios.',
     'copy' => 'Copyright © Tu sitio web 2021',
     'wish' => 'Lista de deseos',

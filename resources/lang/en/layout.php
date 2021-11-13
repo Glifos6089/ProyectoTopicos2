@@ -24,7 +24,7 @@ return [
     'about'=> 'About',
     'description'=>'We are a bag store, which is based on the creation and modification of bags and accessories.',
     'copy' => 'Copyright © Your Website 2021',
-    'wish' => 'Lista de deseos',
+    'wish' => 'Wishlist',
     'order' => 'Orden',
 
 
