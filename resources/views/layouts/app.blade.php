@@ -57,6 +57,10 @@
                     @endguest
                 </ul>
             </div>
+            <select class="form-control changeLang">
+                <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>En</option>
+                <option value="es" {{ session()->get('locale') == 'es' ? 'selected' : '' }}>Es</option>
+            </select>
         </div>
     </nav>
     <!-- Masthead-->
@@ -124,6 +128,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
     <script src="{{ asset('/js/scripts.js') }}"></script>
+    <script type="text/javascript">
+    var url = "{{ route('changeLang') }}";
+    $(".changeLang").change(function() {
+        window.location.href = url + "?lang=" + $(this).val();
+    });
+    </script>
 </body>
 
 </html>
