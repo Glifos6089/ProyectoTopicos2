@@ -13,9 +13,9 @@ return [
     |
     */
 
-    'portfolio' => 'Sections',
-    'about' => 'About Us',
-    'description1' => 'We are a company dedicated to the creation of bags with a special value that is choice of accessories and the modification of our bags.',
-    'description2' => 'Our users are our reason for being, that is why we bring the service of customization and design of bag based on accessories!',
+    'portfolio' => 'Secciones',
+    'about' => 'Sobre nosotros',
+    'description1' => 'Somos una empresa dedicada a la creación de bolsas con un valor especial que es la elección de los accesorios y la modificación de nuestras bolsas.',
+    'description2' => '¡Nuestros usuarios son nuestra razón de ser, por eso aportamos el servicio de personalización y diseño de bolsa a base de accesorios!',
 
 ];

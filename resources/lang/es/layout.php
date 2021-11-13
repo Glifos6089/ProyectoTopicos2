@@ -13,17 +13,20 @@ return [
     |
     */
 
-    'home' => 'Home',
+    'home' => 'Inicio',
     'homes' => ' ',
-    'cart' => 'Shopping Cart',
-    'store' => 'Moon Store',
-    'location' => 'Location',
+    'cart' => 'Carrito de compras',
+    'store' => 'Tienda moon',
+    'location' => 'Ubicación',
     'colombia' => 'Colombia',
     'medellin' => 'Medellín',
-    'web' => 'Around the web',
-    'about'=> 'About',
+    'web' => 'Acerca de la web',
+    'about'=> 'Acerca de nosotros',
     'description'=>'Somos una tienda de bolsos, donde nos basamos en la creacion y personalizacion de bolsos y accesorios.',
-    'copy' => 'Copyright © Your Website 2021',
+    'copy' => 'Copyright © Tu sitio web 2021',
+    'wish' => 'Lista de deseos',
+    'order' => 'Orden',
+
 
 
 ];

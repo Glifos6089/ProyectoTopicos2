@@ -18,6 +18,7 @@ return [
     'review' => 'Create Review',
     'see' => 'See Review',
     'wishlist' => 'Add to Wishlist',
+    'add' => 'Add to shopping cart',
 
 
 ];

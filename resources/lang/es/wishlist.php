@@ -13,12 +13,12 @@ return [
     |
     */
 
-    'view' => 'Wishlist View',
-    'cart' => 'Add to cart',
-    'name' => 'Name:',
-    'price' => 'Price:',
-    'style' => 'Style:',
+    'view' => 'Vista lista de deseos',
+    'cart' => 'Añadir al carrito de compras',
+    'name' => 'Nombre:',
+    'price' => 'Precio:',
+    'style' => 'Estilo:',
     'color' => 'Color:',
-    'texture' => 'Texture:',
+    'texture' => 'Textura:',
 
 ];

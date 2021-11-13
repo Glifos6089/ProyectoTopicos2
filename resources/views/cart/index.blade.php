@@ -62,7 +62,7 @@
                 @csrf
                 <div class="form-group">
                     <label>{{__('cart.dir')}}</label>
-                    <input type="text" class="form-control" placeholder="Enter your address" name="address"
+                    <input type="text" class="form-control" placeholder="{{__('cart.address')}}" name="address"
                         value="{{ old('address') }}">
                 </div>
                 <button type="submit" class="btn1">{{__('cart.buy')}}</button>

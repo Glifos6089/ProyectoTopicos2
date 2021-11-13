@@ -13,16 +13,16 @@ return [
     |
     */
 
-    'view' => 'Review View',
-    'create' => 'Review create ',
-    'save' => 'Review Saved Succesfully ',
-    'commentary' => 'Commentary:',
-    'score' => 'Score:',
-    'name' => 'Name:',
-    'price' => 'Price:',
-    'view' => 'Review View',
-    'rev'=>'Create Review',
-    'see'=>'See Review',
+    'view' => 'Vista de reseña',
+    'create' => 'Crear reseña ',
+    'save' => 'Reseña guardada exitosamente ',
+    'commentary' => 'Comentario:',
+    'score' => 'Puntaje:',
+    'name' => 'Nombre:',
+    'price' => 'Precio:',
+    'view' => 'Vista de reseñas',
+    'rev'=>'Crear reseña',
+    'see'=>'Ver reseña',
 
     
 
