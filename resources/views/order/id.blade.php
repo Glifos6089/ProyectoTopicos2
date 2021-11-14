@@ -16,7 +16,7 @@
                                 <div class="card">
                                     @if(!is_null($item->handbag))
                                     <img class="img-fluid rounded mb-5"
-                                        src="{{  URL::asset('storage/handbags/'.$item->handbag->getImage()) }}"
+                                        src="{{  URL::asset('storage/app/public/handbags/'.$item->handbag->getImage()) }}"
                                         alt="Card image cap"/>
                                     <div class="card-body">
                                         <h5 class="card-title">{{__('admin.name')}} {{ $item->handbag->getName() }}</h5>

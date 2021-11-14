@@ -48,6 +48,33 @@
         </div>
     </div>
 </section>
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">{{__('menu.api1')}}</h2>
+        <img class="img-fluid" src="{{ asset('/img/portfolio/banner.png') }}" alt="" />
+        <div class="card">
+            <div class="card-header text-white bg-success"></div>
+            <div class="card-body text-white bg-success">
+                <div class="row">
+                    @foreach($data["api"] as $product)
+                    <div class="col-md-4">
+                        <div class="card border-dark mb-3 text-dark">
+                            <h5 class="card-title">{{$product->name}}</h5>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">{{__('admin.price')}} {{ $product->price }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+            <div class=" gap-2 mx-auto">
+                <a href="http://35.184.103.130/public/" class="btn btn-secondary btn-lg m-1" role="button"
+                    aria-pressed="true">{{__('menu.api2')}}</a>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- About Section-->
 <section class="page-section bg-primary text-white mb-0" id="about" style='background-color: #F36D51'>
     <div class="container">

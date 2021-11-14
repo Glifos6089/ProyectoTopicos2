@@ -26,6 +26,7 @@ return [
     'copy' => 'Copyright © Your Website 2021',
     'wish' => 'Wishlist',
     'order' => 'Orden',
+    'covid' => 'Covid Info',
 
 
 ];

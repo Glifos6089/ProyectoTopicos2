@@ -26,6 +26,7 @@ return [
     'copy' => 'Copyright © Tu sitio web 2021',
     'wish' => 'Lista de deseos',
     'order' => 'Orden',
+    'covid' => 'Covid Info',
 
 
 

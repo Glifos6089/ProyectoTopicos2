@@ -61,6 +61,8 @@
                 <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>En</option>
                 <option value="es" {{ session()->get('locale') == 'es' ? 'selected' : '' }}>Es</option>
             </select>
+            <a class="navbar-brand js-scroll-trigger" >    </a>
+            <a title="{{__('layout.covid')}}" href="{{ route('covid19.apicovid') }}"><img src=" {{ asset('/img/portfolio/covid.png') }}" width="40" height="40"/></a>
         </div>
     </nav>
     <!-- Masthead-->
