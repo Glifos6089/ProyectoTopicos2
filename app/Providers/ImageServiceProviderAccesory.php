@@ -6,11 +6,8 @@ use Illuminate\Support\ServiceProvider;
 use App\Interfaces\ImageStorage;
 use App\Util\ImageLocalStorageAccesory;
 
-
 class ImageServiceProvider extends ServiceProvider
-
 {
-
     /**
 
      * Register any application services.
@@ -22,11 +19,8 @@ class ImageServiceProvider extends ServiceProvider
      */
 
     public function register()
-
     {
-
         $this->app->bind(ImageStorage::class, function () {
-
             return new ImageLocalStorageAccesory();
         });
     }
