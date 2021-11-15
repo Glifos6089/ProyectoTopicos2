@@ -1,13 +1,12 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
 class covid19Api extends Controller
 {
-   
+
     public function index()
     {
         $date = date('Y-m-d');

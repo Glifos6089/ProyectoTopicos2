@@ -11,27 +11,36 @@
     <div class="album py-5 bg-light">
         <div class="container">
             <h1>COVID-19 INFORMACIÓN DIARIA ACTUALIZADA</h1>
-            <h3>Fecha: </h3>
+            <h3>Fecha:  {{$data->day}} </h3>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
+                    <div class="card mb-4 box-shadow bg-warning">
                         <div class="card-body">
                             <h5 class="card-title">Detalles lugar</h5>
-                            <h6 class="card-text">Continente:</h6>
+                            <h6 class="card-text">Continente: {{$data->continent}}</h6>
                             <h6 class="card-text">Pais: {{$data->country}}</h6>
-                            <h6 class="card-text">Población:</h6>
+                            <h6 class="card-text">Población: {{$data->population}}</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4 box-shadow  ">
+                    <div class="card mb-4 box-shadow bg-info">
                         <div class="card-body">
                             <h5 class="card-title">Casos</h5>
-                            <h6 class="card-text">Nuevos:</h6>
-                            <h6 class="card-text">Criticos:</h6>
-                            <h6 class="card-text">Recuperados:</h6>
-                            <h6 class="card-text">Total:</h6>
-                            <h6 class="card-text">Muertes:</h6>
+                            <h6 class="card-text">Nuevos: {{$data->cases->new}}</h6>
+                            <h6 class="card-text">Activos: {{$data->cases->active}}</h6>
+                            <h6 class="card-text">Criticos: {{$data->cases->critical}}</h6>
+                            <h6 class="card-text">Recuperados: {{$data->cases->recovered}}</h6>
+                            <h6 class="card-text">Total: {{$data->cases->total}}</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow bg-danger">
+                        <div class="card-body">
+                            <h5 class="card-title">Muertes</h5>
+                            <h6 class="card-text">Nuevos: {{$data->deaths->new}}</h6>
+                            <h6 class="card-text">Total: {{$data->deaths->total}}</h6>
                         </div>
                     </div>
                 </div>
