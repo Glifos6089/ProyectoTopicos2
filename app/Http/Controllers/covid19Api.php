@@ -33,7 +33,7 @@ class covid19Api extends Controller
             return "cURL Error #:" . $err;
         } else {
             $decode_response = json_decode($response);
-            //dd($decode_response->response['0']->country);
+            //dd($decode_response->response['0']);
             return view('covid19.apicovid')->with('data', $decode_response->response['0']);
         }
     }
