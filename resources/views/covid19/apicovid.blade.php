@@ -8,6 +8,7 @@
 </div>
 @endif
 <section class="page-section portfolio" id="portfolio">
+<<<<<<< Updated upstream
     <div class="album py-5 bg-light">
         <div class="container">
             <h1>COVID-19 INFORMACIÓN DIARIA ACTUALIZADA</h1>
@@ -47,6 +48,35 @@
             </div>
         </div>
     </div>
+=======
+  <div class="container">
+    <h1>COVID-19 INFORMACIÓN DIARIA ACTUALIZADA</h1>
+    <h3>Fecha:   {{$data->day}} </h3>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Detalles lugar</h5>
+        <h6 class="card-text">Continente:   {{$data->continent}}</h6>
+        <h6 class="card-text">Pais:  {{$data->country}}</h6>
+        <h6 class="card-text">Población:   {{$data->population}}</h6>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Casos</h5>
+        <h6 class="card-text">Nuevos:   {{$data->cases->new}}</h6>
+        <h6 class="card-text">Activos:   {{$data->cases->active}}</h6>
+        <h6 class="card-text">Criticos:   {{$data->cases->critical}}</h6>
+        <h6 class="card-text">Recuperados:   {{$data->cases->recovered}}</h6>
+        <h6 class="card-text">Total:  {{$data->cases->total}}</h6>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Muertes</h5>
+        <h6 class="card-text">Nuevos:   {{$data->deaths->new}}</h6>
+        <h6 class="card-text">Total:   {{$data->deaths->total}}</h6>
+      </div>
+>>>>>>> Stashed changes
     </div>
 </section>
 <!-- About Section-->
