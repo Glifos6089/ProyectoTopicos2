@@ -26,5 +26,6 @@ return [
     'rec' => 'Recuperados: ',
     'total' => 'Total: ',
     'muertes' => 'Muertes', 
+    'date' => 'Fecha',
 
 ];

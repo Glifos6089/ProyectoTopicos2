@@ -15,7 +15,7 @@ return [
 
     'des' => 'COVID-19 DAILY UPDATED INFORMATION',
     'err' => 'ERROR!',
-    'site' => 'Details place',
+    'site' => 'Location details ',
     'con' => 'Continent: ',
     'country' => 'Country: ',
     'poblacion' => 'Population: ',
@@ -26,6 +26,7 @@ return [
     'rec' => 'Recovered: ',
     'total' => 'Total: ',
     'muertes' => 'Deaths', 
+    'date' => 'Date',
 
 
 
