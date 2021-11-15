@@ -2,7 +2,7 @@
 @section('content')
 <main role="main">
         <div class="container">
-            @if(!is_null($data['best']->first()))
+            @if(!is_null($data['best']) && !is_null($data['best']->first()))
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">

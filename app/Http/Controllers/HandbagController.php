@@ -36,6 +36,12 @@ class HandbagController extends Controller
             ->limit(1)
             ->get();
         $data["handbags"] = $handbags;
+        $bestHandbag = Item::select('handbag_id')
+            ->groupBy('handbag_id')
+            ->orderByRaw('COUNT(*) DESC')
+            ->limit(1)
+            ->get();
+        $data["best"] = Handbag::findOrFail($bestHandbag);
         return view('handbag.catalogue')->with("data", $data);
     }
 
