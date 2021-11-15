@@ -45,7 +45,7 @@
             </div>
             <div class="btn-group">
                 <form method="GET" action="{{ route('admin.accesory.create') }}">
-                    <button type="submit" class="btn btn-warning btn-lg">{{__('admin.user')}}</button>
+                    <button type="submit" class="btn btn-warning btn-lg">{{__('admin.accesso')}}</button>
                 </form>
                 <a href="{{ URL::route('admin.home.index') }}">
                     <button class="btn btn-danger btn-lg" type="button">{{__('admin.home')}}</button>

@@ -3,44 +3,44 @@
 <!-- Portfolio Section-->
 @if(session()->get('data') != '')
 <div class="alert alert-danger " role="alert-block">
-    <h4 class="alert-heading text-center">ERROR!</h4>
+    <h4 class="alert-heading text-center">{{__('covid.err')}}</h4>
     <h4 class="alert-heading text-center">{{ session()->get('data') }}</h4>
 </div>
 @endif
 <section class="page-section portfolio" id="portfolio">
     <div class="album py-5 bg-light">
         <div class="container">
-            <h1>COVID-19 INFORMACIÓN DIARIA ACTUALIZADA</h1>
+            <h1>{{__('covid.des')}}</h1>
             <h3>Fecha: {{$data->day}} </h3>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4 box-shadow bg-warning">
                         <div class="card-body">
-                            <h5 class="card-title">Detalles lugar</h5>
-                            <h6 class="card-text">Continente: {{$data->continent}}</h6>
-                            <h6 class="card-text">Pais: {{$data->country}}</h6>
-                            <h6 class="card-text">Población: {{$data->population}}</h6>
+                            <h5 class="card-title">{{__('covid.site')}}</h5>
+                            <h6 class="card-text">{{__('covid.con')}} {{$data->continent}}</h6>
+                            <h6 class="card-text">{{__('covid.country')}} {{$data->country}}</h6>
+                            <h6 class="card-text">{{__('covid.poblacion')}} {{$data->population}}</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4 box-shadow bg-info">
                         <div class="card-body">
-                            <h5 class="card-title">Casos</h5>
-                            <h6 class="card-text">Nuevos: {{$data->cases->new}}</h6>
-                            <h6 class="card-text">Activos: {{$data->cases->active}}</h6>
-                            <h6 class="card-text">Criticos: {{$data->cases->critical}}</h6>
-                            <h6 class="card-text">Recuperados: {{$data->cases->recovered}}</h6>
-                            <h6 class="card-text">Total: {{$data->cases->total}}</h6>
+                            <h5 class="card-title">{{__('covid.casos')}}</h5>
+                            <h6 class="card-text">{{__('covid.new')}} {{$data->cases->new}}</h6>
+                            <h6 class="card-text">{{__('covid.activate')}} {{$data->cases->active}}</h6>
+                            <h6 class="card-text">{{__('covid.cri')}} {{$data->cases->critical}}</h6>
+                            <h6 class="card-text">{{__('covid.rec')}} {{$data->cases->recovered}}</h6>
+                            <h6 class="card-text">{{__('covid.total')}} {{$data->cases->total}}</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4 box-shadow bg-danger">
                         <div class="card-body">
-                            <h5 class="card-title">Muertes</h5>
-                            <h6 class="card-text">Nuevos: {{$data->deaths->new}}</h6>
-                            <h6 class="card-text">Total: {{$data->deaths->total}}</h6>
+                            <h5 class="card-title">{{__('covid.muertes')}}</h5>
+                            <h6 class="card-text">{{__('covid.new')}} {{$data->deaths->new}}</h6>
+                            <h6 class="card-text">{{__('covid.total')}} {{$data->deaths->total}}</h6>
                         </div>
                     </div>
                 </div>
