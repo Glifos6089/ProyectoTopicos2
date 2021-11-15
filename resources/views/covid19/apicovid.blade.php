@@ -11,7 +11,7 @@
     <div class="album py-5 bg-light">
         <div class="container">
             <h1>{{__('covid.des')}}</h1>
-            <h3>{{__('covid.date')}}Fecha: {{$data->day}} </h3>
+            <h3>{{__('covid.date')}} {{$data->day}} </h3>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4 box-shadow bg-warning">
