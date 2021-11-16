@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Lang;
 use App\Models\Handbag;
 use Illuminate\Http\Request;
+use GuzzleHttp\Exception\RequestException;
 
 class HomeController extends Controller
 {
@@ -18,7 +19,7 @@ class HomeController extends Controller
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 30,
+            CURLOPT_TIMEOUT => 1,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => "GET",
         ]);
@@ -26,7 +27,10 @@ class HomeController extends Controller
         $err = curl_error($curl);
         curl_close($curl);
         if ($err) {
-            return "cURL Error #:" . $err;
+            $decode_response = json_decode($response);
+            $data['message'] = '';
+            $data['api'] = [];
+            return view('home.index')->with("data", $data);
         } else {
             $decode_response = json_decode($response);
             $data['message'] = '';
