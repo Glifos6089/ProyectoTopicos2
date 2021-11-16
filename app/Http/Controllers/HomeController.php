@@ -14,7 +14,7 @@ class HomeController extends Controller
     {
         $curl = curl_init();
         curl_setopt_array($curl, [
-            CURLOPT_URL => "http://35.184.103.130/public/api/producta",
+            CURLOPT_URL => "http://babystoretopicosespeciales.tk/public/api/producta",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_ENCODING => "",
