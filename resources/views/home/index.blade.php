@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class=" gap-2 mx-auto">
-                <a href="http://35.184.103.130/public/" class="btn btn-secondary btn-lg m-1" role="button"
+                <a href="http://babystoretopicosespeciales.tk/public/" class="btn btn-secondary btn-lg m-1" role="button"
                     aria-pressed="true">{{__('menu.api2')}}</a>
             </div>
         </div>
