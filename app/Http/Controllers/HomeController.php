@@ -26,7 +26,7 @@ class HomeController extends Controller
         $response = curl_exec($curl);
         $err = curl_error($curl);
         curl_close($curl);
-        if ($err) {
+        if (is_null(json_decode($response))) {
             $decode_response = json_decode($response);
             $data['message'] = '';
             $data['api'] = [];
@@ -34,7 +34,7 @@ class HomeController extends Controller
         } else {
             $decode_response = json_decode($response);
             $data['message'] = '';
-            $data['api'] = $decode_response->data ;
+            $data['api'] = $decode_response->data;
             return view('home.index')->with("data", $data);
         }
     }
